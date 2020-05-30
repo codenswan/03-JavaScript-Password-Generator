@@ -1,5 +1,3 @@
-//create array for each option (there will be 3 arrays - alpha, numeric, symbols):
-//or generate random number using return String.fromCharCode(Math.floor(Math.random() which accesses char codes listed here http://www.net-comber.com/charset.html 
 //if lower - choose random letter - toLowerCase(), if upper - choose random letter - toUpperCase()
 // Array.apply(undefined, Array(26)).map(function(x,y) { return String.fromCharCode(y + 65); }).join('');
 
@@ -12,7 +10,8 @@ function getRandomUpper() {
 }
 
 function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+    // return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+    const numbers = ""
 }
 
 function getRandomSymbol() {
