@@ -1,29 +1,45 @@
 //if lower - choose random letter - toLowerCase(), if upper - choose random letter - toUpperCase()
 // Array.apply(undefined, Array(26)).map(function(x,y) { return String.fromCharCode(y + 65); }).join('');
 
-function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
-}
+// function getRandomLower() {
+//     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+// }
 
-function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-}
+// function getRandomUpper() {
+//     return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+// }
 
-function getRandomNumber() {
-    // return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
-    const numbers = ""
-}
+// function getRandomNumber() {
+//     // return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+//     const numbers = ""
+// }
 
-function getRandomSymbol() {
-    const symbols = '@#$%^&*!(){}[]=<>/,.';
-	return symbols [Math.floor(Math.random() * symbols.length)];
-}
+// function getRandomSymbol() {
+//     const symbols = '@#$%^&*!(){}[]=<>/,.';
+// 	return symbols [Math.floor(Math.random() * symbols.length)];
+// }
 
-console.log(getRandomLower())
-console.log(getRandomUpper())
-console.log(getRandomNumber())
-console.log(getRandomSymbol())
+// console.log(getRandomLower())
+// console.log(getRandomUpper())
+// console.log(getRandomNumber())
+// console.log(getRandomSymbol())
 
+const buttonElement = document.getElementById('btn');
+
+// Add a handler for the 'click' event by providing a callback function.
+// Whenever the element is clicked, a pop-up with "Element clicked!" will
+// appear.
+buttonElement.addEventListener('click', function (event) {
+  alert('Element clicked through function!');
+});
+
+// For compatibility, a non-function object with a `handleEvent` property is
+// treated just the same as a function itself.
+buttonElement.addEventListener('click', {
+  handleEvent: function (event) {
+    alert('Element clicked through handleEvent property!');
+  }
+});
 
 
 
