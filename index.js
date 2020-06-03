@@ -31,7 +31,7 @@ let options = (lower ? 1 : 0) + (upper ? 1 : 0) + (number ? 1 :0) + (symbol ? 1 
 
   let generatedPassword = "";
   for (let count = 0; count < length; count+=options) {
-    //get rand 1 - num selections
+  
     if(lower)
     generatedPassword += getRandomLower();
     if(upper)
