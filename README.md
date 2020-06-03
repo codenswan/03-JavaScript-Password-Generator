@@ -34,7 +34,7 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image demonstrates the application functionality:
 
-![]Screen%20Shot%202020-06-03%20at%202.54.32%20pm.png
+![](Screen%20Shot%202020-06-03%20at%202.54.32%20pm.png)
 
 ## Review
 
