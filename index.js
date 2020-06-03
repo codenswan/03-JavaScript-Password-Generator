@@ -14,17 +14,20 @@ function generatePassword() {
 
   let lower = document.getElementById("lower").checked;
   let upper = document.getElementById("upper").checked;
-  let number = document.getElementById("numeric").checked;
-  let symbol = document.getElementById("special").checked;
-  if (lower || upper || numeric || special) {
+  let number = document.getElementById("number").checked;
+  let symbol = document.getElementById("symbol").checked;
+  
+  if (lower || upper || number || symbol) {
     document.getElementById("characters").classList.remove("alert-danger");
   } else {
     document.getElementById("characters").classList.add("alert-danger");
     alert(
-      "You must select at least one of the options - Lowercase, Uppercase, Numeric, Specail"
+      "You must select at least one of the options - Lowercase, Uppercase, Numeric, Symbol"
     );
   }
-let options = (lower ? 1 : 0) + (upper ? 1 : 0) + (numeric ? 1 :0) + (special ? 1 : 0);
+  
+//this is the loop to output the random password
+let options = (lower ? 1 : 0) + (upper ? 1 : 0) + (number ? 1 :0) + (symbol ? 1 : 0);
 
   let generatedPassword = "";
   for (let count = 0; count < length; count+=options) {
@@ -37,12 +40,9 @@ let options = (lower ? 1 : 0) + (upper ? 1 : 0) + (numeric ? 1 :0) + (special ? 
     generatedPassword += getRandomNumber();
     if(symbol)
     generatedPassword += getRandomSymbol();
-
   }
 
-  
   document.getElementById("password").value = shuffleArray(generatedPassword);
-  
 }
 
 function shuffleArray(array) {
@@ -51,7 +51,6 @@ function shuffleArray(array) {
       [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
-  
 }
 
 //THIS generates random characters using return String.fromCharCode(Math.floor(Math.random() which accesses char codes listed here http://www.net-comber.com/charset.html

@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Password Generator</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <script src="index.js"></script>
-    
-  </head>
-  <body>
-    <div id="main" role="main" class="container-fluid">
-      
-      <!-- main card for the page that contains all the inputs. Bootstrap card -->
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Password Generator</h3>
-          <div class="card-deck">
-            <!-- <h5>Generate a Password</h5> -->
-          </div>
-          <blockquote class="blockquote">
-            <input
-            readonly
-            class="form-control"
-            type="text"
-            id="password"
-            placeholder="Your Secure Password"
-            />
-          </blockquote>
+
+<head>
+  <title>Password Generator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="index.js"></script>
+
+</head>
+
+<body>
+  <div id="main" role="main" class="container-fluid">
+
+    <!-- main card for the page that contains all the inputs. Bootstrap card -->
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Password Generator</h3>
+        <div class="card-deck">
+          <!-- <h5>Generate a Password</h5> -->
         </div>
-        <hr>
-        <div>
-          <h5>Generate a Password</h5>
-        </div>
-      
+        <blockquote class="blockquote">
+          <input readonly class="form-control" type="text" id="password" placeholder="Your Secure Password" />
+        </blockquote>
+      </div>
+      <hr>
+      <div>
+        <h5>Password criteria</h5>
+      </div>
+
       <div class="hidden" id="prompt-length">
         <div class="form-group">
           <label for="length">Enter Password Length</label>
@@ -49,33 +41,28 @@
       <div class="" id="characters">
         <div class="form-group">
           <div class="form-check">
+            <label for="lower" class="form-check-label">Include lowercase letters</label>
             <input class="form-check-input" type="checkbox" id="lower" />
-            <label for="lower" class="form-check-label">Lowercase</label>
           </div>
           <div class="form-check">
+            <label for="upper" class="form-check-label">Include uppercase letters</label>
             <input class="form-check-input" type="checkbox" id="upper" />
-            <label for="upper" class="form-check-label">Uppercase</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="numeric" />
-            <label for="lower" class="form-check-label">Numeric</label>
+            <label for="lower" class="form-check-label">Include numbers</label>
+            <input class="form-check-input" type="checkbox" id="number" />
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="special" />
-            <label for="lower" class="form-check-label">Special</label>
+            <label for="lower" class="form-check-label">Include symbols</label>
+            <input class="form-check-input" type="checkbox" id="symbol" />
           </div>
         </div>
       </div>
-      <button
-          onclick="generatePassword()"
-          class="btn btn-primary"
-          type="button"
-          name="generate"
-          id="genButton"
-          >
-          Generate Password
-        </button>
+      <button onclick="generatePassword()" class="btn btn-primary" type="button" name="generate" id="genButton">
+        Generate Password
+      </button>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
