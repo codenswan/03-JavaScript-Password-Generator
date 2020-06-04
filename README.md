@@ -5,7 +5,6 @@ This is a random password generator app. It fulfils the requirements outlined in
 provides an employee with access to sensitive data
 * a randomised password with combination of lower, upper, numeric and special characters depending on the users input
 * the app ensures that the password generator will be unique and therfore provide greater security.
-```
 
 ## Acceptance Criteria
 I changed some of the acceptance criteria with suitable alternatives. I have marked them below.
