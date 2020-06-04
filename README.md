@@ -37,7 +37,7 @@ The following image demonstrates the application functionality:
 
 If the user does meet the criteria the app alerts the user with an alert box and red highlight pointing out the fields that require input as shown below.
 
-![](Screen%Shot%2020-06-03%at%3.02.37%pm.png)
+![](Screen%20Shot%202020-06-03%20at%203.02.37%20pm.png)
 
 ## Review
 
