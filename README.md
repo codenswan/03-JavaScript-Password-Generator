@@ -37,10 +37,6 @@ If the user does meet the criteria the app alerts the user with an alert box and
 
 ![](Screen Shot 2020-06-03 at 3.02.37 pm.png)
 
-
-Javascript features
-
-
 ## Review
 
 I have submitted the following 
