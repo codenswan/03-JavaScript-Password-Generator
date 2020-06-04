@@ -42,7 +42,5 @@ If the user does meet the criteria the app alerts the user with an alert box and
 ## Review
 
 I have submitted the following 
-
 - The URL of the deployed application.
-
 - The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
